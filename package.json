@@ -1,0 +1,29 @@
+{
+  "name": "api_rotas",
+  "version": "1.0.0",
+  "description": "Criacao de uma api sobre distancia de cidades em KM",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ednsoares/api_rotas.git"
+  },
+  "author": "ednsoares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ednsoares/api_rotas/issues"
+  },
+  "homepage": "https://github.com/ednsoares/api_rotas#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
