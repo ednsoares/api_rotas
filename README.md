@@ -30,9 +30,122 @@ Por padrão na etapa de desenvolvimento deixei a api salvando a data e horario q
 
 <h2>3. Documentação Api - https://api-rotas-psi.vercel.app </h2>
 
+**[GET] /rotas**
+
+Descrição: Retorna todas as rotas cadastradas.
+Resposta:
+~~~
+[
+	{
+		"_id": "65d03e4185aabe8315e8113f",
+		"nome_city1": "Mortugaba - BA ",
+		"nome_city2": "Jacaraci - BA",
+		"distancia": 35,
+		"createAt": "2024-02-17T05:01:12.487Z",
+		"__v": 0
+	},
+	{
+		"_id": "65d0d175ef323cd6b6083b6c",
+		"nome_city1": "Mortugaba - BA ",
+		"nome_city2": "Caculé - BA",
+		"distancia": 105,
+		"createAt": "2024-02-17T15:31:24.442Z",
+		"__v": 0
+	},
+	{
+		"_id": "65d0ea779faf55424b7e56c6",
+		"nome_city1": "Mortugaba - BA ",
+		"nome_city2": "Licinio de Almeida - BA",
+		"distancia": 65,
+		"createAt": "2024-02-17T17:17:37.449Z",
+		"__v": 0
+	}
+]
+~~~
+**[GET] /rotas/{id}**
+
+Descrição: Retorna uma unica rota baseada no id passado.
+Resposta:
+~~~
+{
+	"_id": "65d03e4185aabe8315e8113f",
+	"nome_city1": "Mortugaba - BA ",
+	"nome_city2": "Jacaraci - BA",
+	"distancia": 35,
+	"createAt": "2024-02-17T05:01:12.487Z",
+	"__v": 0
+}
+~~~
+Caso o id não seja encontrado, emite essa resposta
+~~~
+{
+	"error": "Rota não encontrada"
+}
 
 ~~~
-npm start
+Caso o tamanho do id seja incompativel aparecerar essa resposta
+~~~
+{
+	"error": "Error"
+}
+
+~~~
+
+**[POST] /rotas**
+
+Descrição: Cadastra de uma nova rota.
+Entrada:
+~~~
+{
+	"nome_city1":"Salinas - MG ",
+	"nome_city2":"Licinio de Almeida - BA",
+	"distancia": "260"
+}
+~~~
+Resposta:
+~~~
+{
+	"nome_city1": "Salinas - MG ",
+	"nome_city2": "Licinio de Almeida - BA",
+	"distancia": "260"
+}
+~~~
+**[PUT] /rotas/{id}**
+
+Descrição: Atualiza dados da rota.
+Entrada:
+~~~
+{
+	"nome_city2":"Caculé - BA"
+}
+~~~
+Resposta:
+~~~
+{
+	"_id": "65d0d175ef323cd6b6083b6c",
+	"nome_city1": "Mortugaba - BA ",
+	"nome_city2": "Caculé - BA",
+	"distancia": 105,
+	"createAt": "2024-02-17T15:31:24.442Z",
+	"__v": 0
+}
+~~~
+
+
+**[DELETE] /rotas/{id}**
+
+Descrição: Exclui uma única rota.
+Resposta se tudo ocorrer bem
+~~~
+{
+	"response": "rota deletada"
+}
+~~~
+Resposta se der algum erro...
+~~~
+{
+	"error": "Error"
+}
 ~~~
 
 <hr>
@@ -75,7 +188,7 @@ npm start
 
 <hr>
 <h2>6. Imagem Modelo Relacional BD</h2>
-
+<a href="https://imgur.com/anvYxIq"><img src="https://i.imgur.com/anvYxIq.jpg" title="source: imgur.com" /></a>
 
 
 
