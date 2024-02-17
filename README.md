@@ -18,13 +18,12 @@ Por padrão na etapa de desenvolvimento deixei a api salvando a data e horario q
 
 ## Tecnologias Utilizadas
 
-- [Express](https://expressjs.com/) - Framework web para Node.js
-- [Mongoose](https://mongoosejs.com/) - Biblioteca de modelagem de objetos MongoDB para Node.js
-- [MongoDB](https://www.mongodb.com/) - Banco de dados NoSQL
-- [Node.js](https://nodejs.org/) - Ambiente de execução JavaScript do lado do servidor
-- [Vercel](https://vercel.com/) - Plataforma de hospedagem e implantação para aplicativos da web
-- [Nodemon](https://nodemon.io/) - Utilitário que monitora alterações no código e reinicia automaticamente o servidor
-
+- Express
+- Mongoose
+- MongoDB
+- Node.js
+- Vercel
+- Nodemon
 
 </div>
 
@@ -45,8 +44,22 @@ npm start
 <p>Abaixo segue alguns links que serviu de base e de ajuda para conseguir finalizar esse pequeno projeto.</p>
 <dl>
   <dt><h3>5.1. <a href="https://nodejs.org/pt-br/docs/"> Documentação Node</a></h3></dt>
-  <dt><h3>5.2. <a href="https://youtu.be/1TzCYVTC9tc?si=YixPmAdS9J68mCGf">NodeJs - Entrada de dados com prompt-sync</a></h3></dt>
-  <dt><h3>5.1. <a href="https://docs.npmjs.com/cli/v6/commands/npm-start">Documentação Npm focada no comando Start</a></h3></dt>
+  <dd>Ambiente de execução JavaScript do lado do servidor</dd>
+  <dt><h3>5.1. <a href="https://expressjs.com/">Express</a></h3></dt>
+  <dd>Framework web para Node.js.</dd>
+  
+  <dt><h3>5.2. <a href="https://mongoosejs.com/">Mongoose</a></h3></dt>
+  <dd>Biblioteca de modelagem de objetos MongoDB para Node.js.</dd>
+  
+  <dt><h3>5.3. <a href="https://www.mongodb.com/">MongoDB</a></h3></dt>
+  <dd>Banco de dados NoSQL.</dd>
+  
+  <dt><h3>5.4. <a href="https://nodemon.io/">Nodemon</a></h3></dt>
+  <dd>Utilitário que monitora alterações no código e reinicia automaticamente o servidor.</dd>
+  
+  <dt><h3>5.5. <a href="https://vercel.com/">Vercel</a></h3></dt>
+  <dd>Plataforma de hospedagem e implantação para aplicativos da web.</dd>
+
 </dl>
 </div>
       
