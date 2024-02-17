@@ -16,7 +16,8 @@ Por padrão na etapa de desenvolvimento deixei a api salvando a data e horario q
 
 <hr>
 
-## Tecnologias Utilizadas
+<h2>2. Tecnologias Utilizadas </h2>
+
 
 - Express
 - Mongoose
@@ -33,6 +34,7 @@ Por padrão na etapa de desenvolvimento deixei a api salvando a data e horario q
 **[GET] /rotas**
 
 Descrição: Retorna todas as rotas cadastradas.
+
 Resposta:
 ~~~
 [
@@ -65,6 +67,7 @@ Resposta:
 **[GET] /rotas/{id}**
 
 Descrição: Retorna uma unica rota baseada no id passado.
+
 Resposta:
 ~~~
 {
@@ -94,6 +97,7 @@ Caso o tamanho do id seja incompativel aparecerar essa resposta
 **[POST] /rotas**
 
 Descrição: Cadastra de uma nova rota.
+
 Entrada:
 ~~~
 {
@@ -113,6 +117,7 @@ Resposta:
 **[PUT] /rotas/{id}**
 
 Descrição: Atualiza dados da rota.
+
 Entrada:
 ~~~
 {
@@ -135,6 +140,7 @@ Resposta:
 **[DELETE] /rotas/{id}**
 
 Descrição: Exclui uma única rota.
+
 Resposta se tudo ocorrer bem
 ~~~
 {
